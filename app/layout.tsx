@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <html lang="pt-br">
-      <body className={twMerge('bg-zinc-800', inter.className)}>{children}</body>
+      <body className={twMerge('bg-stone-950', inter.className)}>{children}</body>
     </html>
   )
 }

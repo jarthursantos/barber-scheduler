@@ -24,7 +24,7 @@ export const Navigator: React.FC<NavigatorProps> = ({ shouldPrevious }) => {
   )
 
   return (
-    <header slot="container-start" className='absolute top-0 inset-x-0 z-10 bg-gradient-to-r from-10% from-zinc-700 via-transparent to-90% to-zinc-700'>
+    <header slot="container-start" className='absolute top-0 inset-x-0 z-10 bg-gradient-to-r from-10% from-stone-900 via-transparent to-90% to-stone-900'>
       <nav className='flex items-center justify-between h-16 p-2'>
         <button disabled={!shouldPrevious} className='transition-all aspect-square h-full flex items-center justify-center enabled:hover:bg-zinc-600/50 rounded-lg disabled:fill-zinc-500 enabled:fill-zinc-400 enabled:hover:fill-zinc-200' onClick={handlePrevMonth}>
           <ChevronLeft width={24} height={24} />
