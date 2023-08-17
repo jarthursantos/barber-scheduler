@@ -81,20 +81,20 @@ export const Calendar: React.FC<CalendarProps> = ({ month, year }) => {
 
   return (
     <div className='flex flex-col'>
-      <header className='flex items-center justify-center text-zinc-200 h-16 p-2'>
+      <header className='flex items-center justify-center text-stone-200 h-16 p-2'>
         <button className='capitalize font-medium'>{currentMonthName} / {year}</button>
       </header>
       <ul className='grid grid-cols-7 gap-2 p-4'>
         {WEEK_DAYS.map((day) => (
-          <li className='flex justify-center items-center text-zinc-400 font-medium text-sm' key={day}>
+          <li className='flex justify-center items-center text-stone-400 font-medium text-sm' key={day}>
             {day}
           </li>
         ))}
         {days.map(({ number, type, shouldHaveSchedule, date }, index) => (
           <li data-should-schedule={shouldHaveSchedule} className='group aspect-square' key={index}>
-            <button disabled={!shouldHaveSchedule} className='relative flex justify-center items-center w-full h-full rounded-lg group-data-[should-schedule="true"]:hover:bg-zinc-600/50' onClick={() => { console.log({ type, date, isToday: isToday(date) }) }}>
-              <span className='w-[2ch] text-right text-zinc-500 group-data-[should-schedule="true"]:text-zinc-200'>{number}</span>
-              {isToday(date) && <span className='absolute bottom-[6px] w-1 h-1 rounded-full bg-zinc-200' />}
+            <button disabled={!shouldHaveSchedule} className='relative flex justify-center items-center w-full h-full rounded-lg group-data-[should-schedule="true"]:hover:bg-stone-600/50' onClick={() => { console.log({ type, date, isToday: isToday(date) }) }}>
+              <span className='w-[2ch] text-right text-stone-500 group-data-[should-schedule="true"]:text-stone-200'>{number}</span>
+              {isToday(date) && <span className='absolute bottom-[6px] w-1 h-1 rounded-full bg-stone-200' />}
             </button>
           </li>
         ))}

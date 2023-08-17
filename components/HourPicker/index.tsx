@@ -3,7 +3,7 @@ import { Card } from '../Card'
 export const HourPicker: React.FC = () => {
   return (
     <Card className='w-full max-w-[400px]' title='Horário'>
-      <div className='text-zinc-300 px-4 pb-4'>
+      <div className='text-stone-300 px-4 pb-4'>
         <small>Horário com a duração do procedimento</small>
         <small>
           <ul>
